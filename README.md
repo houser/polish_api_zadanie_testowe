@@ -14,8 +14,8 @@ Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z ni
 
 > Każdy z katalogów posiada zestaw plików odpowiadający wydzielonej definicji klasy. 
 
-* **HoldInfo**:
-  1. **HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
+1. **HoldInfo**:
+  * **HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
   2. **HoldInfo.xsd** - definicja schematu  
   3. **HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
   
