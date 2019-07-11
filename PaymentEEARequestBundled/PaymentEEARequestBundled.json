@@ -1,0 +1,155 @@
+{
+	 "$schema": "http://json-schema.org/schema#",
+	 "description": "PaymentEEARequestBundled from PolishApi<2.1.2>",
+	 "title":"Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki / EEA Transfer inside bundle Request Class",
+	 			"type": "object",
+			"required": [
+				"deliveryMode",
+				"recipient",
+				"sender",
+				"system",
+				"tppTransactionId",
+				"transferData"
+			],
+			"properties": {
+				"recipient": {
+								"required": [
+				"accountNumber",
+				"countryCode",
+				"nameAddress"
+			],
+			"properties": {
+				"accountNumber": {
+								"type": "string",
+			"maxLength": 34,
+			"description": "Numer konta, format dla przelewów zagranicznych"
+				},
+				"nameAddress": {
+								"properties": {
+				"value": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"maxLength": 35
+					},
+					"maxItems": 4,
+					"minItems": 1
+				}
+			},
+			"description": "Klasa zawierająca dane nazwy i adresu w postaci czterech linii danych / Simple name and  postal address Class"
+				},
+				"countryCode": {
+					"type": "string",
+					"description": "Kod kraju odbiorcy przelewu, wg normy ISO 3166-1 alfa-3 / Country code of payment recipient, ISO 3166-1 alfa-3 compliant",
+					"maxLength": 3
+				}
+			},
+			"description": "Klasa zawierająca dane odbiorcy używana w żądaniach PIS dla operacji zagranicznych / PIS foreign Recipient Data Class"
+				},
+				"sender": {
+								"properties": {
+				"accountNumber": {
+								"type": "string",
+			"maxLength": 34,
+			"description": "Numer konta"
+				},
+				"nameAddress": {
+								"properties": {
+				"value": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"maxLength": 35
+					},
+					"maxItems": 4,
+					"minItems": 1
+				}
+			},
+			"description": "Klasa zawierająca dane nazwy i adresu w postaci czterech linii danych / Simple name and  postal address Class"
+				}
+			},
+			"description": "Klasa zawierająca dane nadawcy przelewu zagranicznego używana w żądaniach PIS / Foreign PIS services Sender Data Class"
+				},
+				"transferData": {
+								"allOf": [
+				{
+								"type": "object",
+			"required": [
+				"amount",
+				"description"
+			],
+			"properties": {
+				"description": {
+					"type": "string",
+					"description": "Pole opisujące przelew / Description",
+					"maxLength": 140
+				},
+				"amount": {
+					"type": "string",
+					"description": "Kwota przelewu / Amount",
+					"pattern": "^(0|([1-9][0-9]{0,}))\\.\\d{2}$"
+				},
+				"executionDate": {
+					"type": "string",
+					"format": "date",
+					"description": "Data wykonania przelewu. Wymagany pod warunkiem przekazania wartości FutureDated w atrybucie executionMode. Format: YYYY-MM-DD / Date when the transfer is to be executed (YYYY-MM-DD). Required conditionally if executionMode attribute has value FutureDated."
+				}
+			},
+			"description": "Bazowa klasa dla TransferData / TransferData Base Class"
+				},
+				{
+					"type": "object",
+					"required": [
+						"currency"
+					],
+					"properties": {
+						"currency": {
+							"type": "string",
+							"description": "Waluta, domyślnie EUR przelewów zagranicznych / Currency",
+							"maxLength": 3
+						}
+					}
+				}
+			],
+			"description": "Klasa zawierająca dane przelewu / Transfer Data Class"
+				},
+				"tppTransactionId": {
+					"type": "string",
+					"description": "ID transakcji nadany przez TPP / Transaction ID (TPP)",
+					"maxLength": 64
+				},
+				"deliveryMode": {
+					"type": "string",
+					"description": "Tryb pilności / Urgency mode",
+					"enum": [
+						"ExpressD0",
+						"StandardD1"
+					]
+				},
+				"system": {
+					"type": "string",
+					"description": "Droga jaką przelew ma być rozliczony / The way the transfer should be settled",
+					"enum": [
+						"SEPA",
+						"InstantSEPA",
+						"Target"
+					]
+				},
+				"hold": {
+					"type": "boolean",
+					"description": "Czy założyć blokadę (w przypadku np. zlecenia przelewu w dniu wolnym) / Indicates if payment should be holded"
+				},
+				"executionMode": {
+					"type": "string",
+					"description": "Tryb realizacji płatności. Nadrzędna informacja decydująca o tym w jakim trybie zostanie zrealizowana płatność. / Payment execution mode. The superior information deciding which mode is to be used to execute payment.",
+					"enum": [
+						"Immediate",
+						"FutureDated"
+					]
+				}
+			},
+			"xml": {
+				"name": "PaymentEEARequestBundled"
+			},
+			"description": "Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki / EEA Transfer inside bundle Request Class"
+}

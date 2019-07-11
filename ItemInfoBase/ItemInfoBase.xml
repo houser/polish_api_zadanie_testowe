@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemInfoBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ItemInfoBase.xsd">
+	<type>object</type>
+	<required>amount</required>
+	<required>itemId</required>
+	<properties>
+		<itemId>
+			<type>string</type>
+			<description>ID elementu (transakcji lub blokadzie) nadany przez ASPSP / Element (transaction or hold) ID (ASPSP)</description>
+			<maxLength>64</maxLength>
+		</itemId>
+		<amount>
+			<type>string</type>
+			<description>Kwota transakcji / Amount of the transaction</description>
+			<pattern>^(0|([1-9][0-9]{0,}))\.\d{2}$</pattern>
+		</amount>
+		<currency>
+			<type>string</type>
+			<description>Kod ISO waluty transakcji / Currency (ISO)</description>
+			<maxLength>3</maxLength>
+		</currency>
+		<description>
+			<type>string</type>
+			<description>Tytuł transakcji / Description of the transaction</description>
+			<maxLength>140</maxLength>
+		</description>
+		<transactionType>
+			<type>string</type>
+			<description>Typ transakcji / Transaction type</description>
+			<maxLength>100</maxLength>
+		</transactionType>
+		<tradeDate>
+			<type>string</type>
+			<format>date-time</format>
+			<description>Data operacji, YYYY-MM-DDThh:mm:ss[.mmm] / Date of the operation</description>
+		</tradeDate>
+		<mcc>
+			<type>string</type>
+			<description>Kod dla każdej transakcji/operacji wykonanej przy użyciu karty / A code of each transaction performed by card</description>
+		</mcc>
+		<auxData>
+			<type>object</type>
+			<description>Klasa mapy &lt;string, string&gt; / Map (Dictionary) class</description>
+			<additionalProperties>
+				<type>string</type>
+			</additionalProperties>
+		</auxData>
+	</properties>
+	<description>Klasa bazowa informacji o elemencie (transakcji lub blokadzie) / Element (transaction or hold) Information Base Class</description>
+</ItemInfoBase>

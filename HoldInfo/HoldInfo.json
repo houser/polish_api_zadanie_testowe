@@ -1,0 +1,212 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"description": "HoldInfo from PolishApi<2.1.2>",
+	"title":"Klasa opisująca blokadę na rachunku / Hold info class",
+	 "type": "object",
+	 			"xml": {
+				"name": "HoldInfo"
+			},
+			"allOf": [
+				{
+								"type": "object",
+			"required": [
+				"amount",
+				"itemId"
+			],
+			"properties": {
+				"itemId": {
+					"type": "string",
+					"description": "ID elementu (transakcji lub blokadzie) nadany przez ASPSP / Element (transaction or hold) ID (ASPSP)",
+					"maxLength": 64
+				},
+				"amount": {
+					"type": "string",
+					"description": "Kwota transakcji / Amount of the transaction",
+					"pattern": "^(0|([1-9][0-9]{0,}))\\.\\d{2}$"
+				},
+				"currency": {
+					"type": "string",
+					"description": "Kod ISO waluty transakcji / Currency (ISO)",
+					"maxLength": 3
+				},
+				"description": {
+					"type": "string",
+					"description": "Tytuł transakcji / Description of the transaction",
+					"maxLength": 140
+				},
+				"transactionType": {
+					"type": "string",
+					"description": "Typ transakcji / Transaction type",
+					"maxLength": 100
+				},
+				"tradeDate": {
+					"type": "string",
+					"format": "date-time",
+					"description": "Data operacji, YYYY-MM-DDThh:mm:ss[.mmm] / Date of the operation"
+				},
+				"mcc": {
+					"type": "string",
+					"description": "Kod dla każdej transakcji/operacji wykonanej przy użyciu karty / A code of each transaction performed by card"
+				},
+				"auxData": {
+								"type": "object",
+			"description": "Klasa mapy <string, string> / Map (Dictionary) class",
+			"additionalProperties": {
+				"type": "string"
+			}
+				}
+			},
+			"description": "Klasa bazowa informacji o elemencie (transakcji lub blokadzie) / Element (transaction or hold) Information Base Class"
+				},
+				{
+					"type": "object",
+					"properties": {
+						"holdExpirationDate": {
+							"type": "string",
+							"format": "date-time",
+							"description": "Data ważności blokady, YYYY-MM-DDThh:mm:ss[.mmm]"
+						},
+						"initiator": {
+										"properties": {
+				"value": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"maxLength": 35
+					},
+					"maxItems": 4,
+					"minItems": 1
+				}
+			},
+			"description": "Klasa zawierająca dane nazwy i adresu w postaci czterech linii danych / Simple name and  postal address Class"
+						},
+						"sender": {
+										"properties": {
+				"accountNumber": {
+					"type": "string",
+					"description": "Numer konta nadawcy/odbiorcy / Account number"
+				},
+				"accountMassPayment": {
+					"type": "string",
+					"description": "Numer wirtualny rachunku odbiorcy w formacie / Virtual account name"
+				},
+				"bank": {
+								"properties": {
+				"bicOrSwift": {
+					"type": "string",
+					"description": "Numer BIC/SWIFT Banku / BIC/SWIFT number",
+					"maxLength": 11
+				},
+				"name": {
+					"type": "string",
+					"description": "Nazwa Banku / Bank's name",
+					"maxLength": 70
+				},
+				"code": {
+					"type": "string",
+					"description": "Kod Banku, dla przelewów zagranicznych / Bank's code",
+					"maxLength": 10
+				},
+				"countryCode": {
+					"type": "string",
+					"description": "Kod kraju 3166-1 / Country code",
+					"maxLength": 3
+				},
+				"address": {
+								"type": "array",
+			"description": "Klasa zawierająca dane adresu pocztowego / Postal address Class",
+			"items": {
+				"type": "string",
+				"maxLength": 35
+			},
+			"minItems": 1,
+			"maxItems": 4
+
+				}
+			},
+			"description": "Klasa zawierająca dane banku używana w żądaniach AIS / AIS Bank Data Class"
+				},
+				"nameAddress": {
+								"properties": {
+				"value": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"maxLength": 35
+					},
+					"maxItems": 4,
+					"minItems": 1
+				}
+			},
+			"description": "Klasa zawierająca dane nazwy i adresu w postaci czterech linii danych / Simple name and  postal address Class"
+				}
+			},
+			"description": "Klasa zawierająca dane nadawcy/odbiorcy używana w żądaniach AIS / AIS Sender Recipient Data Class"
+						},
+						"recipient": {
+										"properties": {
+				"accountNumber": {
+					"type": "string",
+					"description": "Numer konta nadawcy/odbiorcy / Account number"
+				},
+				"accountMassPayment": {
+					"type": "string",
+					"description": "Numer wirtualny rachunku odbiorcy w formacie / Virtual account name"
+				},
+				"bank": {
+								"properties": {
+				"bicOrSwift": {
+					"type": "string",
+					"description": "Numer BIC/SWIFT Banku / BIC/SWIFT number",
+					"maxLength": 11
+				},
+				"name": {
+					"type": "string",
+					"description": "Nazwa Banku / Bank's name",
+					"maxLength": 70
+				},
+				"code": {
+					"type": "string",
+					"description": "Kod Banku, dla przelewów zagranicznych / Bank's code",
+					"maxLength": 10
+				},
+				"countryCode": {
+					"type": "string",
+					"description": "Kod kraju 3166-1 / Country code",
+					"maxLength": 3
+				},
+				"address": {
+								"type": "array",
+			"description": "Klasa zawierająca dane adresu pocztowego / Postal address Class",
+			"items": {
+				"type": "string",
+				"maxLength": 35
+			},
+			"minItems": 1,
+			"maxItems": 4
+				}
+			},
+			"description": "Klasa zawierająca dane banku używana w żądaniach AIS / AIS Bank Data Class"
+				},
+				"nameAddress": {
+								"properties": {
+				"value": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"maxLength": 35
+					},
+					"maxItems": 4,
+					"minItems": 1
+				}
+			},
+			"description": "Klasa zawierająca dane nazwy i adresu w postaci czterech linii danych / Simple name and  postal address Class"
+				}
+			},
+			"description": "Klasa zawierająca dane nadawcy/odbiorcy używana w żądaniach AIS / AIS Sender Recipient Data Class"
+						}
+					}
+				}
+			],
+			"description": "Klasa opisująca blokadę na rachunku / Hold info class"
+}

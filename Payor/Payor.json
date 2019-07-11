@@ -1,0 +1,62 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"description": "Payor from PolishApi<2.1.2>",
+	"title":"Klasa informacji o płatniku do US / Tax Payor Information Class",
+				"type": "object",
+			"required": [
+				"payorId",
+				"payorIdType"
+			],
+			"properties": {
+				"payorId": {
+					"type": "string",
+					"description": "Identyfikator płatnika / Payor ID",
+					"maxLength": 20
+				},
+				"payorIdType": {
+					"type": "string",
+					"description": "Typ identyfikatora płatnika / Payor ID type",
+					"enum": [
+						"N",
+						"P",
+						"R",
+						1,
+						2,
+						3
+					],
+					"x-ms-enum": {
+						"name": "payorIdType",
+						"values": [
+							{
+								"value": "N",
+								"description": "NIP"
+							},
+							{
+								"value": "P",
+								"description": "Pesel"
+							},
+							{
+								"value": "R",
+								"description": "Regon"
+							},
+							{
+								"value": 1,
+								"description": "Dowód osobisty"
+							},
+							{
+								"value": 2,
+								"description": "Paszport"
+							},
+							{
+								"value": 3,
+								"description": "Inny"
+							}
+						]
+					}
+				}
+			},
+			"xml": {
+				"name": "Payor"
+			},
+			"description": "Klasa informacji o płatniku do US / Tax Payor Information Class"
+}

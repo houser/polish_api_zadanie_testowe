@@ -1,0 +1,55 @@
+{
+	 "$schema": "http://json-schema.org/schema#",
+	 "description": "ItemInfoBase from PolishApi<2.1.2>",
+	 "title":"Klasa bazowa informacji o elemencie (transakcji lub blokadzie) / Element (transaction or hold) Information Base Class",
+	 "type": "object",
+		 "required": [
+			"amount",
+			"itemId"
+		],
+		 "properties": {
+			 "itemId": {
+				 "type": "string",
+				 "description": "ID elementu (transakcji lub blokadzie) nadany przez ASPSP / Element (transaction or hold) ID (ASPSP)",
+				 "maxLength": 64
+			},
+			 "amount": {
+				 "type": "string",
+				 "description": "Kwota transakcji / Amount of the transaction",
+				 "pattern": "^(0|([1-9][0-9]{0,}))\\.\\d{2}$"
+			},
+			 "currency": {
+				 "type": "string",
+				 "description": "Kod ISO waluty transakcji / Currency (ISO)",
+				 "maxLength": 3
+			},
+			 "description": {
+				 "type": "string",
+				 "description": "Tytuł transakcji / Description of the transaction",
+				 "maxLength": 140
+			},
+			 "transactionType": {
+				 "type": "string",
+				 "description": "Typ transakcji / Transaction type",
+				 "maxLength": 100
+			},
+			 "tradeDate": {
+				 "type": "string",
+				 "format": "date-time",
+				 "description": "Data operacji, YYYY-MM-DDThh:mm:ss[.mmm] / Date of the operation"
+			},
+			 "mcc": {
+				 "type": "string",
+				 "description": "Kod dla każdej transakcji/operacji wykonanej przy użyciu karty / A code of each transaction performed by card"
+			},
+			 "auxData": {
+				 "type": "object",
+				 "description": "Klasa mapy <string, string> / Map (Dictionary) class",
+				 "additionalProperties": {
+					 "type": "string"
+				}
+			}
+		},
+		 "description": "Klasa bazowa informacji o elemencie (transakcji lub blokadzie) / Element (transaction or hold) Information Base Class"
+	
+}

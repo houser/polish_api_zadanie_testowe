@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PaymentEEARequestBundled xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xsi:noNamespaceSchemaLocation="PaymentEEARequestBundled.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <recipient>
+    <countryCode>A</countryCode>
+    <nameAddress>
+      <item />
+      <value>
+        <item>string</item>
+        <item>string</item>
+        <item>string</item>
+        <item>string</item>
+      </value>
+    </nameAddress>
+    <item />
+    <accountNumber>string</accountNumber>
+  </recipient>
+  <sender>
+    <nameAddress>
+      <value>
+        <item>string</item>
+        <item>string</item>
+        <item>string</item>
+      </value>
+    </nameAddress>
+    <item />
+    <item />
+    <item />
+    <accountNumber>string</accountNumber>
+  </sender>
+  <transferData>
+    <amount>3.59</amount>
+    <description>string</description>
+    <executionDate>string</executionDate>
+    <currency>A</currency>
+  </transferData>
+  <tppTransactionId>string</tppTransactionId>
+  <deliveryMode>ExpressD0</deliveryMode>
+  <system>InstantSEPA</system>
+  <hold>true</hold>
+  <executionMode>FutureDated</executionMode>
+</PaymentEEARequestBundled>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Payor xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xsi:noNamespaceSchemaLocation="Payor.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <payorId>string</payorId>
+  <payorIdType>R</payorIdType>
+</Payor>
