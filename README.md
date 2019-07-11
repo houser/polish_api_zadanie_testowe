@@ -8,9 +8,9 @@
 > Każdy z katalogów posiada zestaw plików odpowiadający wydzielonej definicji klasy. 
 
 1. **HoldInfo**:
-  - **HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
-  - **HoldInfo.xsd** - definicja schematu  
-  - **HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
+  &nbsp;* **HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
+  &nbsp;* **HoldInfo.xsd** - definicja schematu  
+  &nbsp;* **HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
   
 2. **ItemInfoBase**:
   * **ItemInfoBase.json** - plik zawierający definicję klasy ItemInfoBase (Klasa bazowa informacji o elemencie (transakcji lub blokadzie))
@@ -21,6 +21,11 @@
   * **PaymentEEARequestBundled.json** - plik zawierający definicję klasy (Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki)
   * **PaymentEEARequestBundled.xsd** - definicja schematu
   * **PaymentEEARequestBundled.xml** - plik testowy zlinkowany z definicją schematu
+
+4. **Payor**:
+  * **Payor.json** - plik zawierający definicję klasy (Klasa informacji o płatniku do US)
+  * **Payor.xsd** - definicja schematu
+  * **Payor.xml** - plik testowy zlinkowany z definicją schematu
 
 
 ## Użyte narzędzia
