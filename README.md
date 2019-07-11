@@ -8,9 +8,9 @@
 > Każdy z katalogów posiada zestaw plików odpowiadający wydzielonej definicji klasy. 
 
 1. **HoldInfo**:
-  &nbsp;* **HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
-  &nbsp;* **HoldInfo.xsd** - definicja schematu  
-  &nbsp;* **HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
+  * &nbsp;**HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
+  * &nbsp;**HoldInfo.xsd** - definicja schematu  
+  * &nbsp;**HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
   
 2. **ItemInfoBase**:
   * **ItemInfoBase.json** - plik zawierający definicję klasy ItemInfoBase (Klasa bazowa informacji o elemencie (transakcji lub blokadzie))
