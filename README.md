@@ -44,6 +44,4 @@ Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z ni
 * Online XSD to XML Converter (https://www.liquid-technologies.com/online-xsd-to-xml-converter)
 * Notepad++
 
-## Kontakt
-Created by [@Rafał Jędrysiak](rafal.jedrysiak@gmail.com)
 
