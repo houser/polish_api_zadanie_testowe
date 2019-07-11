@@ -13,19 +13,19 @@
   * &nbsp;**HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
   
 2. **ItemInfoBase**:
-  * **ItemInfoBase.json** - plik zawierający definicję klasy ItemInfoBase (Klasa bazowa informacji o elemencie (transakcji lub blokadzie))
-  * **ItemInfoBase.xsd** - definicja schematu
-  * **ItemInfoBase.xml** - plik testowy zlinkowany z definicją schematu
+  * &nbsp;**ItemInfoBase.json** - plik zawierający definicję klasy ItemInfoBase (Klasa bazowa informacji o elemencie (transakcji lub blokadzie))
+  * &nbsp;**ItemInfoBase.xsd** - definicja schematu
+  * &nbsp;**ItemInfoBase.xml** - plik testowy zlinkowany z definicją schematu
   
 3. **PaymentEEARequestBundled**:
-  * **PaymentEEARequestBundled.json** - plik zawierający definicję klasy (Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki)
-  * **PaymentEEARequestBundled.xsd** - definicja schematu
-  * **PaymentEEARequestBundled.xml** - plik testowy zlinkowany z definicją schematu
+  * &nbsp;**PaymentEEARequestBundled.json** - plik zawierający definicję klasy (Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki)
+  * &nbsp;**PaymentEEARequestBundled.xsd** - definicja schematu
+  * &nbsp;**PaymentEEARequestBundled.xml** - plik testowy zlinkowany z definicją schematu
 
 4. **Payor**:
-  * **Payor.json** - plik zawierający definicję klasy (Klasa informacji o płatniku do US)
-  * **Payor.xsd** - definicja schematu
-  * **Payor.xml** - plik testowy zlinkowany z definicją schematu
+  * &nbsp;**Payor.json** - plik zawierający definicję klasy (Klasa informacji o płatniku do US)
+  * &nbsp;**Payor.xsd** - definicja schematu
+  * &nbsp;**Payor.xml** - plik testowy zlinkowany z definicją schematu
 
 
 ## Użyte narzędzia
