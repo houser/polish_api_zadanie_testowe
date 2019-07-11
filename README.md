@@ -1,6 +1,10 @@
 # Schemat transformacji wybranych encji modelu danych Polish API (wersja 2.1.2)
 
-> Celem niniejszego repozytorium jest przedstawienie schematu transformacji z formatu JSON do formatu XML. Na podstawie modelu danych Polish API (wersja 2.1.2) wyeksportowane zostały 4 definicje klasy wraz z ich referencjami. Każda definicja klasy została zapisana w oddzielnym pliku JSON. Do każdego z nich została utworzona definicja schematu XSD oraz odpowiadający jej przykładowy plik XML, co pozwala na sprawdzenie poprawności walidacji struktury i typu danych. 
+> Celem niniejszego repozytorium jest przedstawienie schematu transformacji z formatu JSON do formatu XML oraz utworzenie definicji XSD na potrzeby walidacji wybranej encji modelu danych. 
+
+
+## Info 
+Na podstawie modelu danych Polish API (wersja 2.1.2) wyeksportowane zostały 4 definicje klasy wraz z ich referencjami. Każda definicja klasy została zapisana w oddzielnym pliku JSON. Do każdego z nich została utworzona definicja schematu XSD oraz odpowiadający jej przykładowy plik XML, co pozwala na sprawdzenie poprawności walidacji struktury i typu danych. 
 
 
 ## Lista katalogów 
