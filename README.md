@@ -16,26 +16,26 @@ Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z ni
 
 1. **HoldInfo**:
   * **HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
-  2. **HoldInfo.xsd** - definicja schematu  
-  3. **HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
+  * **HoldInfo.xsd** - definicja schematu  
+  * **HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
   
   
-* **ItemInfoBase**:
-  1. **ItemInfoBase.json** - plik zawierający definicję klasy ItemInfoBase (Klasa bazowa informacji o elemencie (transakcji lub blokadzie))
-  2. **ItemInfoBase.xsd** - definicja schematu
-  3. **ItemInfoBase.xml** - plik testowy zlinkowany z definicją schematu
+2. **ItemInfoBase**:
+  * **ItemInfoBase.json** - plik zawierający definicję klasy ItemInfoBase (Klasa bazowa informacji o elemencie (transakcji lub blokadzie))
+  * **ItemInfoBase.xsd** - definicja schematu
+  * **ItemInfoBase.xml** - plik testowy zlinkowany z definicją schematu
   
   
-* **PaymentEEARequestBundled**:
-  1. **PaymentEEARequestBundled.json** - plik zawierający definicję klasy (Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki)
-  2. **PaymentEEARequestBundled.xsd** - definicja schematu
-  3. **PaymentEEARequestBundled.xml** - plik testowy zlinkowany z definicją schematu
+3. **PaymentEEARequestBundled**:
+  * **PaymentEEARequestBundled.json** - plik zawierający definicję klasy (Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki)
+  * **PaymentEEARequestBundled.xsd** - definicja schematu
+  * **PaymentEEARequestBundled.xml** - plik testowy zlinkowany z definicją schematu
 
 
-* **Payor**:
-  1. **Payor.json** - plik zawierający definicję klasy (Klasa informacji o płatniku do US)
-  2. **Payor.xsd** - definicja schematu
-  3. **Payor.xml** - plik testowy zlinkowany z definicją schematu
+4. **Payor**:
+  * **Payor.json** - plik zawierający definicję klasy (Klasa informacji o płatniku do US)
+  * **Payor.xsd** - definicja schematu
+  * **Payor.xml** - plik testowy zlinkowany z definicją schematu
 
 
 ## Użyte narzędzia
