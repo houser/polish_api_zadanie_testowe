@@ -7,6 +7,9 @@
 Na podstawie modelu danych Polish API (wersja 2.1.2) wyeksportowane zostały 4 definicje klasy wraz z ich referencjami. Każda definicja klasy została zapisana w oddzielnym pliku JSON. Do każdego z nich została utworzona definicja schematu XSD oraz odpowiadający jej przykładowy plik XML, co pozwala na sprawdzenie poprawności walidacji struktury i typu danych. 
 
 
+## Sposób użycia
+Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z nim plik XSD, co pozwala na zwalidowanie struktury za pomocą jakiegokolwiek narzędzia posiadającego funkcję procesowania plików XML. 
+
 ## Lista katalogów 
 
 > Każdy z katalogów posiada zestaw plików odpowiadający wydzielonej definicji klasy. 
@@ -41,4 +44,6 @@ Na podstawie modelu danych Polish API (wersja 2.1.2) wyeksportowane zostały 4 d
 * Online XSD to XML Converter (https://www.liquid-technologies.com/online-xsd-to-xml-converter)
 * Notepad++
 
+## Kontakt
+Created by [@Rafał Jędrysiak](rafal.jedrysiak@gmail.com)
 
