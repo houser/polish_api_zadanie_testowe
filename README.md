@@ -10,7 +10,7 @@ Na podstawie modelu danych Polish API (wersja 2.1.2) wyeksportowane zostały 4 d
 ## Sposób użycia
 Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z nim plik XSD, co pozwala na zwalidowanie struktury za pomocą jakiegokolwiek narzędzia posiadającego funkcję procesowania plików XML. 
 
-## Lista katalogów 
+## Opis zawartości katalogów 
 
 > Każdy z katalogów posiada zestaw plików odpowiadający wydzielonej definicji klasy. 
 
