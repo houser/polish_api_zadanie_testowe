@@ -8,28 +8,28 @@ Na podstawie modelu danych Polish API (wersja 2.1.2) wyeksportowane zostały 4 d
 
 
 ## Sposób użycia
-Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z nim plik XSD, co pozwala na zwalidowanie struktury za pomocą jakiegokolwiek narzędzia posiadającego funkcję procesowania plików XML. 
+Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z nim plik XSD, co pozwala na zwalidowanie struktury za pomocą jakiegokolwiek narzędzia posiadającego funkcję procesowania plików XML.  
 
 ## Opis zawartości katalogów 
 
-> Każdy z katalogów posiada zestaw plików odpowiadający wydzielonej definicji klasy. 
+> Każdy z katalogów posiada zestaw plików odpowiadający wydzielonej definicji klasy.  
 
 1. **HoldInfo**:
   * **HoldInfo.json** - plik zawierający definicję klasy HoldInfo (klasa opisująca blokadę na rachunku)
   * **HoldInfo.xsd** - definicja schematu  
-  * **HoldInfo.xml** - plik testowy zlinkowany z definicją schematu
+  * **HoldInfo.xml** - plik testowy zlinkowany z XSD
   
   
 2. **ItemInfoBase**:
   * **ItemInfoBase.json** - plik zawierający definicję klasy ItemInfoBase (Klasa bazowa informacji o elemencie (transakcji lub blokadzie))
   * **ItemInfoBase.xsd** - definicja schematu
-  * **ItemInfoBase.xml** - plik testowy zlinkowany z definicją schematu
+  * **ItemInfoBase.xml** - plik testowy zlinkowany z XSD
   
   
 3. **PaymentEEARequestBundled**:
   * **PaymentEEARequestBundled.json** - plik zawierający definicję klasy (Klasa zlecenia przelewu zagranicznego SEPA w ramach paczki)
   * **PaymentEEARequestBundled.xsd** - definicja schematu
-  * **PaymentEEARequestBundled.xml** - plik testowy zlinkowany z definicją schematu
+  * **PaymentEEARequestBundled.xml** - plik testowy zlinkowany z XSD
 
 
 4. **Payor**:
