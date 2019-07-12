@@ -9,7 +9,8 @@ Pozwala to na sprawdzenie poprawności walidacji struktury i typu danych.
 
 
 ## Sposób użycia
-Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z nim plik XSD, co pozwala na zwalidowanie struktury za pomocą jakiegokolwiek narzędzia posiadającego funkcję procesowania plików XML.  
+Katalog z nazwami definicji klas zawiera zestaw plików XML oraz zlinkowany z nim plik XSD, co pozwala na zwalidowanie struktury za pomocą jakiegokolwiek narzędzia posiadającego funkcję procesowania plików XML.
+Np. przy użyciu programu Altova XML Spy wczytaj pliki **HoldInfo.xml**i **HoldInfo.xsd**, następnie uruchom walidację (F8).
 
 ## Opis zawartości katalogów 
 
