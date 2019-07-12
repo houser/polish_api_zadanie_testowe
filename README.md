@@ -4,7 +4,7 @@
 
 
 ## Info 
-Na podstawie modelu danych Polish API (plik: PolishAPI-ver2_1_2.json) wyeksportowane zostały 4 definicje klasy wraz z ich referencjami. Każda definicja klasy została zapisana w oddzielnym pliku JSON (HoldInfo.json, ItemInfoBase.json, PaymentEEARequestBundled.json, Payor.json). Następnie do każdego z nich została utworzona definicja schematu XSD oraz odpowiadający jej przykładowy plik XML. 
+Na podstawie modelu danych Polish API (plik: PolishAPI-ver2_1_2.json) wyeksportowane zostały 4 definicje klasy wraz z ich referencjami. Każda definicja klasy została zapisana w oddzielnym pliku JSON (**HoldInfo.json**, **ItemInfoBase.json**, **PaymentEEARequestBundled.json**, **Payor.json**). Następnie do każdego z nich została utworzona definicja schematu XSD oraz odpowiadający jej przykładowy plik XML. 
 Pozwala to na sprawdzenie poprawności walidacji struktury i typu danych. 
 
 
